@@ -1,0 +1,6 @@
+<svg height="32" id="Icons" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+  <title>ic_portal_alarm_current</title>
+  <g id="alarming">
+    <path d="M27.5,4H4.5A1.5,1.5,0,0,0,3,5.5v14A1.5,1.5,0,0,0,4.5,21H13l-3,8,11-8h6.5A1.5,1.5,0,0,0,29,19.5V5.5A1.5,1.5,0,0,0,27.5,4ZM18,19H15V17h3Zm0-4H15V6h3Z" fill="#fff"/>
+  </g>
+</svg>

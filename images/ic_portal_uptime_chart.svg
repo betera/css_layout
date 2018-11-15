@@ -1,0 +1,15 @@
+<svg height="32" id="Icons" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+  <title>ic_portal_uptime_chart</title>
+  <g id="trending">
+    <g id="Produktionszeiten">
+      <polygon fill="#fff" points="4.5 2 2 6 7 6 4.5 2"/>
+      <polygon fill="#fff" points="31 27.5 27 25 27 30 31 27.5"/>
+      <rect fill="#fff" height="22" width="1" x="4" y="6"/>
+      <rect fill="#fff" height="1" width="22" x="5" y="27"/>
+    </g>
+    <rect fill="#fff" height="10" width="3" x="7" y="15"/>
+    <rect fill="#fff" height="8" width="3" x="12" y="17"/>
+    <rect fill="#fff" height="11" width="3" x="17" y="14"/>
+    <rect fill="#fff" height="14" width="3" x="22" y="11"/>
+  </g>
+</svg>
