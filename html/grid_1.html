@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="../css/grid.css">
+		<style>
+		
+			.gridContainer {
+				resize: both;
+				overflow: hidden;
+				margin: 0px;
+				background-color: rgb(32,32,32);
+				width: 100vw;
+				height: 65vh;
+
+				display: grid;
+				grid-template-columns: [col-left] auto [col-middle] 25% [col-right] 40px;
+				grid-template-rows: [row-top] 40px [row-table] auto [row-detail] 50% [row-buttons] 60px [row-alarms] 25px;
+			}
+
+			.gridTitleBar {
+				grid-column: col-left / span 3;
+				grid-row: row-top;
+			}
+			
+			.gridTable {
+				grid-column: col-left;
+				grid-row: row-table;
+			}
+			
+			.gridDetail {
+				grid-column: col-left;
+				grid-row: row-detail;
+			}
+			
+			.gridButtons {
+				grid-column: col-left / span 3;
+				grid-row: row-buttons;
+			}
+			
+			.gridScheduler {
+				grid-column: col-middle;
+				grid-row: row-table / span row-buttons;
+			}
+			
+			.gridNavbar {
+				grid-column: col-right;
+				grid-row: row-table / span row-alarms;
+			}
+
+			.gridAlarms {
+				grid-column: col-left / span 3;
+				grid-row: row-alarms;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="gridContainer">
+			<div class="gridTitleBar titlebarBackground">Titelleiste</div>
+			<div class="gridTable tableBackground">Tabelle</div>
+			<div class="gridDetail detailBackground">Detailansicht</div>
+			<div class="gridButtons buttonsBackground">Buttons</div>
+			<div class="gridScheduler schedulerBackground">Scheduler</div>
+			<div class="gridNavbar navbarBackground">Navbar</div>
+			<div class="gridAlarms alarmsBackground">Navbar</div>
+		</div>
+	</body>
+</html>

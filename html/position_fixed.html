@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="../css/position.css">
+		<style>
+		
+			.dialog {
+				position: fixed;
+				width: 20vw;
+				height: 20vh;
+				top: calc(50% - 10vh);
+				left: calc(50% - 10vw);
+				/*
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				*/
+			}
+			
+			/* 	
+				wenn font-size erhöht wird passt content nicht mehr rein.
+				daher lieber transform benutzen und width/height weglassen.
+				funktioniert auch bei containern ohne width/height.
+			*/
+			
+			/*
+			*[class*="dialog"] {
+				font-size: 1.5em;
+			}
+			*/
+		</style>
+	</head>
+	<body>
+		<div class="dialog blackOnWhite">Das ist ein Dialog mit:
+			<div class="codeblock">{
+				<div>position: fixed</div>
+				<div>top: calc(50% - 10vh)</div>
+				<div>left: calc(50% - 10vw)</div>
+			}</div>
+		</div>
+	</body>
+</html>

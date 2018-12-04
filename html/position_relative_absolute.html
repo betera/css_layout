@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="../css/position.css">
+		<style>
+		
+			.navigation {
+				display: inline;
+				position: relative;
+			}
+		
+			.contextMenu {
+				position: absolute;
+				top: 70%;
+				left: 70%;
+				width: 20vw;
+				height: 10vh;
+				display: none;
+			}
+			
+			.navigation:hover > .contextMenu {
+				display: inline;
+			}
+		
+		</style>
+	</head>
+	<body>
+		Hier versteckt sich ein Kontext-Menu:
+		<div class="navigation">===<div class="contextMenu">Ein Kontext-Menu</div></div>. Und danach geht es ganz normal weiter.
+	</body>
+</html>
