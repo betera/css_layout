@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Flex final</title>
-    <link rel="stylesheet" type="text/css"
-
-      href="../css/flex.css">
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>Flex final.............................</title>
+    <link rel="stylesheet" type="text/css" href="../css/flex.css">
     <style>
 		
-			.moduleContainer {
-				resize: both;
-				overflow: hidden;
-				margin: 16px;
-				background-color: rgb(32,32,32);
-				width: 30vw;
-				height: 65vh;
-				
-				display: flex;
-				flex-flow: column wrap;
-				justify-content: flex-start; /* main axis */
-				align-items: stretch; /* cross axis, current line */
-				align-content: stretch; /* cross axis, like justify-content */
-			}
+		.moduleContainer {
+			resize: both;
+			overflow: hidden;
+			margin: 16px;
+			background-color: rgb(32,32,32);
+			width: 30vw;
+			height: 65vh;
+			
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: flex-start; /* main axis */
+			align-items: stretch; /* cross axis, current line */
+			align-content: stretch; /* cross axis, like justify-content */
+		}
 
-			.module {
-				margin: 4px;
-				
-				display: flex;
-				flex-flow: row nowrap;
-				flex-grow: 0;
-				flex-shrink: 0;
-			}
+		.module {
+			margin: 4px;
+			
+			display: flex;
+			flex-flow: row nowrap;
+			flex-grow: 0;
+			flex-shrink: 0;
+			/* align-self: flex-end; */
+		}
 			
 		</style>
   </head>
   <body>
     <div class="moduleContainer" style="width: 470px; height: 683px;">
-      <div class="appTitle">Message
-        overview</div>
+      <div class="appTitle">Message overview</div>
       <div class="module">
         <div class="moduleImage alarmImage"></div>
         <div>Current messages</div>
@@ -49,8 +48,7 @@
         <div class="moduleImage alarmImage"></div>
         <div>Message summary</div>
       </div>
-      <div class="appTitle">Process
-        values</div>
+      <div class="appTitle">Process values</div>
       <div class="module ">
         <div class="moduleImage trendingImage"></div>
         <div>Historical values</div>
@@ -67,8 +65,7 @@
         <div class="moduleImage trendingImage"></div>
         <div>Targets and limits</div>
       </div>
-      <div class="appTitle">Shift
-        logbook</div>
+      <div class="appTitle">Shift logbook</div>
       <div class="module">
         <div class="moduleImage pmImage"></div>
         <div>Shift logbook</div>
@@ -85,8 +82,7 @@
         <div class="moduleImage pmImage"></div>
         <div>Manage templates</div>
       </div>
-      <div class="appTitle">User
-        administration</div>
+      <div class="appTitle">User administration</div>
       <div class="module">
         <div class="moduleImage securityImage"></div>
         <div>My profile</div>

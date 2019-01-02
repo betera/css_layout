@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Grid Area.............................</title>
+    <title>Grid 1..........................................................</title>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <link rel="stylesheet" type="text/css" href="../css/grid.css">
     <style>
@@ -15,43 +15,43 @@
 				height: 65vh;
 
 				display: grid;
-				grid-template-areas:
-					"titlebar 	titlebar 	titlebar"
-					"table 		scheduler 	navbar"
-					"detail 	scheduler 	navbar"
-					"buttons 	buttons		navbar"
-					"alarms 	alarms		alarms";
-					
-				grid-template-columns: auto 25% 40px;
-				grid-template-rows: 40px 1fr 2fr 60px 25px;
+				grid-template-columns: [col-left] auto [col-middle] 25% [col-right] 40px;
+				grid-template-rows: [row-top] 40px [row-table] auto [row-detail] 50% [row-buttons] 60px [row-alarms] 25px;
 			}
 
 			.gridTitleBar {
-				grid-area: buttons;
+				grid-column: col-left / span 3;
+				grid-row: row-top;
 			}
 			
 			.gridTable {
-				grid-area: table;
+				grid-column: col-left;
+				grid-row: row-table;
 			}
 			
 			.gridDetail {
-				grid-area: detail;
+				grid-column: col-left;
+				grid-row: row-detail;
 			}
 			
 			.gridButtons {
-				grid-area: titlebar;
+				grid-column: col-left / span 3;
+				grid-row: row-buttons;
 			}
 			
 			.gridScheduler {
-				grid-area: scheduler;
+				grid-column: col-middle;
+				grid-row: row-table / span row-buttons;
 			}
 			
 			.gridNavbar {
-				grid-area: navbar;
+				grid-column: col-right;
+				grid-row: row-table / span row-alarms;
 			}
 
 			.gridAlarms {
-				grid-area: alarms;
+				grid-column: col-left / span 3;
+				grid-row: row-alarms;
 			}
 			
 		</style>
@@ -64,7 +64,8 @@
       <div class="gridButtons buttonsBackground">Buttons</div>
       <div class="gridScheduler schedulerBackground">Scheduler</div>
       <div class="gridNavbar navbarBackground">Navbar</div>
-      <div class="gridAlarms alarmsBackground">Navbar</div>
+      <div class="gridAlarms alarmsBackground">Alarms</div>
     </div>
+    
   </body>
 </html>

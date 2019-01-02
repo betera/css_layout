@@ -43,6 +43,8 @@
 			}
 			
 			.gridScheduler {
+        box-sizing:border-box;
+        padding:20px;
 				grid-area: scheduler;
 			}
 			

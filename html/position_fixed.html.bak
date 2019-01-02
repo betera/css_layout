@@ -8,12 +8,15 @@
 		
 			.dialog {
 				position: fixed;
-/*        width: 20vw;
-        height: 20vh; */
+        width: 20vw;
+        height: 20vh;
+				top: calc(50% - 10vh);
+				left: calc(50% - 10vw);
+				/*
 				top: 50%;
 				left: 50%;
-/*				transform: translateX(-50%) translateY(-50%);
-        */
+				transform: translateX(-50%) translateY(-50%);
+				*/
 			}
 			
 			/* 	
@@ -37,5 +40,6 @@
         <div>left: calc(50% - 10vw)</div>
         }</div>
     </div>
+    
   </body>
 </html>

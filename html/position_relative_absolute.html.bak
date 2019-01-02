@@ -10,7 +10,7 @@
 				display: inline;
         width:100px;
         top:12px;
-        left:-200px;
+        left:-200;
 				position: relative;
 			}
 		
